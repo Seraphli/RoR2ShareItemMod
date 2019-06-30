@@ -30,21 +30,3 @@ else
 
 ## Thanks
 Thanks to [the project](https://github.com/Solst1c3/SharedItemPickup) created by Solst1c3.
-
-
-## Note
-
-Change `grantItem` method:
-```
-if (this.pickupIndex.IsLunar())
-{
-  inventory.GiveItem(this.pickupIndex.itemIndex, 1);
-}
-else
-{
-  foreach (PlayerCharacterMasterController playerCharacterMasterController in PlayerCharacterMasterController.instances)
-  {
-    playerCharacterMasterController.master.inventory.GiveItem(this.pickupIndex.itemIndex, 1);
-  }
-}
-```
