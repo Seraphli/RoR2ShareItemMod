@@ -7,6 +7,27 @@ Replaces Assembly-CSharp.dll in:
 
 **Backup current dll**
 
+## DIY
+Edit Assembly-CSharp.dll -> RoR2 -> GenericPickupController -> GrantItem() -> line 214
+Change:
+```
+inventory.GiveItem(this.pickupIndex.itemIndex, 1);
+```
+Into:
+```
+if (this.pickupIndex.IsLunar())
+{
+  inventory.GiveItem(this.pickupIndex.itemIndex, 1);
+}
+else
+{
+  foreach (PlayerCharacterMasterController playerCharacterMasterController in PlayerCharacterMasterController.instances)
+  {
+    playerCharacterMasterController.master.inventory.GiveItem(this.pickupIndex.itemIndex, 1);
+  }
+}
+```
+
 ## Thanks
 Thanks to [the project](https://github.com/Solst1c3/SharedItemPickup) created by Solst1c3.
 
