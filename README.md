@@ -11,13 +11,13 @@ Replaces Assembly-CSharp.dll in:
 Edit Assembly-CSharp.dll -> RoR2 -> GenericPickupController -> GrantItem() -> line 214
 Change:
 ```
-inventory.GiveItem(this.pickupIndex.itemIndex, 1);
+inventory.GiveItem((pickupDef != null) ? pickupDef.itemIndex : ItemIndex.None, 1);
 ```
 Into:
 ```
 if (this.pickupIndex.IsLunar())
 {
-  inventory.GiveItem(this.pickupIndex.itemIndex, 1);
+  inventory.GiveItem((pickupDef != null) ? pickupDef.itemIndex : ItemIndex.None, 1);
 }
 else
 {
