@@ -13,6 +13,11 @@ Replaces RoR2.dll in:
 **Backup current dll if you want to restore**
 
 ## DIY
+
+Use dnSpy. My version is v6.0.4.
+
+NOTE: Don't copy the dll to another folder before editing, which will cause compile fail. Backup and edit the file in `Managed` folder.
+
 Edit RoR2.dll -> RoR2 -> ItemDef -> AttemptGrant()
 Change:
 ```
@@ -32,6 +37,8 @@ else
   }
 }
 ```
+
+Then save all.
 
 ## Thanks
 Thanks to [the project](https://github.com/Solst1c3/SharedItemPickup) created by Solst1c3.
