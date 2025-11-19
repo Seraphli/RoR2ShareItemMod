@@ -1,4 +1,13 @@
 # RoR2ShareItemMod
+
+## ⚠️ ARCHIVED
+
+**This project has been archived due to changes in game version 1.4.0#840.**
+
+Starting from version 1.4.0#840, the game code structure has changed in a way that makes it incompatible with dnSpy modifications. Even attempting to compile without any modifications will result in errors. Therefore, this mod approach is no longer viable and the project is archived.
+
+---
+
 RoR2 - Gives a copy of each picked up item to every player.
 
 Only share non-lunar and non-void items. You can get items even after you die. Only host need this mod.
@@ -13,6 +22,12 @@ Replaces RoR2.dll in:
 **Backup current dll if you want to restore**
 
 ## DIY
+
+**⚠️ WARNING: This method no longer works for game version 1.4.0#840 and later.**
+
+Due to code structure changes in version 1.4.0#840, dnSpy can no longer be used to modify this code. Even compiling without any changes will result in errors.
+
+### For versions before 1.4.0#840:
 
 Use dnSpy. My version is v6.0.4.
 
