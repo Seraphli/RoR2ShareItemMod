@@ -1,8 +1,19 @@
 # RoR2ShareItemMod
 
-## ⚠️ ARCHIVED
+## ➡️ Moved to RoR2ShareItemIL
 
-**This project has been archived due to changes in game version 1.4.0#840.**
+**This repository is archived and no longer maintained.**
+
+The mod has been reimplemented and **works again on current game versions** as an automated IL patch
+(Mono.Cecil) that produces a single patched `RoR2.dll`:
+
+**➡️ https://github.com/Seraphli/RoR2ShareItemIL**
+
+---
+
+## ⚠️ Why this repository was archived
+
+**This repository was archived because the dnSpy workflow described below stopped working in game version 1.4.0#840.**
 
 Starting from version 1.4.0#840, the game code structure has changed in a way that makes it incompatible with dnSpy modifications. Even attempting to compile without any modifications will result in errors. Therefore, this mod approach is no longer viable and the project is archived.
 
